@@ -1,0 +1,800 @@
+
+
+/*   hidden   */
+	
+	.hidden {   position:absolute;   left:-9999px;   width:1px;   height:1px;   font-size:0;   
+				  line-height:0;   overflow:hidden;  
+	}
+
+
+/*     visual     */
+	
+
+	#visual {     /*
+					 background-image:url('../images/wpay_visual_bg.jpg');
+					 background-repeat:no-repeat;
+					 background-position:0px  0px;   */
+	}
+
+	
+
+/*     main - contant c1    */
+
+	.contant.c1 {   border-bottom:1px solid #eee;   }
+	.htitle.h3 {  width:60px;  height:40px;    position:absolute;    
+					     top: 30px;  left: 0;   font-size:13px;  color:#333;
+	}
+	.contant.c1  .a2.a21 , .contant.c1  .a2.a22  {  position:relative;   }
+	
+	.tunnel2 {   width:435px;  height:40px;   overflow:hidden;  
+					position: absolute;   top: 20px;    left: 65px;  
+	}
+	.train2 {  width:340px;  height:120px;    }
+	.train2 li {  width:340px;  height:40px;    }
+	.slidingdesc	{          line-height:40px;  font-size:13px;  color:#777;          }
+	
+	.a2desc {   height:40px;   float:left;     }
+	.a2desc.btn {   width:25px; height:24px;    position:absolute;    }
+	.a2desc.btn.b21    {   top:28px;  right:50px;   }
+	.a2desc.btn.b22    {   top:28px;  right:20px;   }
+	.a2desc.btn a {  display:block;  width:100%;  height:100%;  }
+	.a2desc.btn img {  width:25px; }
+
+	.a2.a22  .a2desc.btn.b21    {   top:28px;  right:30px;   }
+	.a2.a22  .a2desc.btn.b22    {   top:28px;  right:0px;   }
+
+
+	.a2.a22 .htitle.h3 {   width:60px;     }
+
+
+
+/*     main - contant c2    */
+	
+
+	.contant.c2  .a3.a31 , .contant.c2  .a3.a32  {   
+							background-image:url('../images/c2_line.png');
+							background-repeat:no-repeat;
+							background-position:100%  50%; 
+	
+	}
+    .a3desc  {   width:100%;  height:100%;   }
+	.a3desc.p1  {    }
+	.a3desc.p2  {   }
+	.a3desc.p3  {   }
+	
+	.a3desc a:link,  .a3desc a:visited  {  display:block;  width:100%;  height:100%;   color:#333; 
+							font-size:14px;   text-align:center; 
+	}
+	.a3desc a:hover strong,  .a3desc a:focus strong,
+	.a3desc a:hover span,  .a3desc a:focus span  {  /* color:#e56e6e;      text-decoration:underline;    */ }
+
+
+	.a3desc strong  {  display:block;  font-size:20px;   padding-top:34px;  color:#333;   }
+	.a3desc span {  display:block;    color:#777;   }
+
+
+
+/*     main - contant c3    */
+	
+
+		/*     이벤트 슬라이딩 배너   */
+
+				.sliding.m  {   width:662px;   height:260px;  position:relative;    }
+				.tunnel.m  {    width:662px;  height:100%;    overflow:hidden;     }
+				.train.m  {   width:1986px;  height:100%;        }
+				.train.m > li  {   width:33.333%;  height:100%;   float:left;      }
+
+				.train.m .ctrl01  {     background-image:url("../images/event_01.jpg"); 
+								 	 /* background-color:#ffccff;   */
+										 background-repeat:no-repeat;
+										 background-position:0px 0px;
+										 
+					
+				}
+				.train.m .ctrl02 {       background-image:url("../images/event_01.jpg"); 
+									 background-color:#ff66ff;  
+									 background-repeat:no-repeat;
+									 background-position:0px 0px;
+									
+							
+				}
+				.train.m .ctrl00  {     background-image:url("../images/event_01.jpg"); 
+										 background-color:#ff33ff;	
+										 background-repeat:no-repeat;
+										 background-position:0px 0px;
+										
+				}
+				
+				.prev , .next { width:40px;   height:40px;  position:absolute;   top:45%;  }
+				.prev {    left:20px;    }
+				.next {    right:20px;   }
+				.prev img ,.next  img { width:16px;  height:16px; margin:12px 0 0 12px; }  
+				
+				.controlbtn {  width:96px;  height:28px;    position:absolute;  bottom:14px;  left:41%; 
+								  border-radius:28px;
+				}
+				.controlbtn li {  float:left;   margin:7.5px 5px 0;  }
+				.controlbtn li a:link , .controlbtn li a:visited { display:block;   width:12px;  height:12px;   background-color:#ddd;	
+																text-decoration:none;    text-indent:-9999px;
+																border-radius:50%;   position:relative;
+				}		
+				.controlbtn li a:hover .controlbtn li a:focus , .controlbtn li a.active{  color:#333;   background-color:#e56e6e; 
+															width:40px;  height:12px;  border-radius:8px;
+				} 
+				.stopswitch { width:28px;   height:28px;  position:absolute;  bottom:14px;  left:56%; 
+							  /*	background-color:rgba(0, 0, 0, 0.3);   */
+				}
+				.stopswitch a:link, .stopswitch a:visited {    display:block;  width:100%;  height:100%;    }
+				.stopswitch img { width:16px;   height:16px; margin:6px 0 0 6px;  } 
+
+
+	.inner.a21  .a2desc.p21  {   width:100%;  height:100%;    position:relative;    }
+		.inner.a21  .a2desc.p21 img {    width:130px;   height:80px;  position:absolute;  top:21px;  left:32px;  }
+	/*  .inner.a21  .a2desc.p22  {   width:50%;  height:100%;     }   */
+	
+	.inner.a21  .a2desc.p21  span  {   display:block;    color:#999;   font-size:13px;   position:absolute;  top:28px;  right:88px;  }
+	.inner.a21  .a2desc.p21  strong  {  display:block;   color:#333;   font-size:16px;      position:absolute;  top:48px;  right:36px;     }
+
+
+	.inner.a21  .a2desc.p21 a:link,  .inner.a21  .a2desc.p21 a:visited  {    display:block;   width:60px;  height:20px;   
+									    color:#999;   font-size:12px;     position:absolute;     top: 78px;   right: 74px;
+	}
+	.inner.a21  .a2desc.p21 a:hover,  .inner.a21  .a2desc.p21 a:focus  {  /* text-decoration:underline;   */   }
+	.moreimg  {   display:block;   width:100%;   height:100%; 
+					 background-image:url('../images/c3_arrow.png');
+					 background-repeat:no-repeat;
+					 background-position:36px 6px;
+		
+	}
+
+	/*****************************/
+
+	.inner.a22  {}
+	.a22.inner1  {     }
+	.a22inner.i21, .a22inner.i22 {  width:100%;  height:100%;   text-align:center;    }
+	.a22inner.i21 img  {  /*  width:62px;  height:34px;  */ padding-top:22px;  }
+	.a22inner.i21 a  {  display:block;  width:100%;  height:100%;      }
+	.a22inner.i21 span  {   display:block;    color:#999;   font-size:12px;       }
+	.a22inner.i21 strong , .a22inner.i22 strong  {   display:block;   color:#333;   font-size:16px;      }  
+
+	.a22inner.i22 img {    padding-top:28px;    }
+	
+
+
+/*     main - contant c4    */
+
+	
+	.contant.c4 {   /* margin-top:30px; */  }
+	.c4form  {   width:100%;   height:74px;  border-top:3px solid  #ccc;    border-bottom:1px solid #ccc;   
+					position:relative;    
+	}
+	
+	/*************    select design    ***************/
+	
+		.c4formbox {     width:95%;  height:42px;    position:absolute;   top:16px;  right:25px;   }
+		.c4formbox h4 {  width:28%;  font-size:18px;   color:#333;         
+							 line-height:40px;   float:left;
+		}
+		.c4formbox  span {    color:#999;  padding-left:10px;   }
+
+		.c4selectbox  {  width:17%;    height:100%;     float:left;     padding-right:8px;      } 
+
+
+	
+
+	 /**********   크로스 브라우징     **********/
+
+	
+			select {
+						  width:100%;  height:42px;    text-indent:10px;  /*  font-family: inherit;  폰트 상속*/
+						 color:#999;	  font-size:12px;  
+						  background: url('../images/search_arrow.png') no-repeat 93% 50%; /* 네이티브 화살표 대체 */  
+						  border: 1px solid #ddd;   border-radius: 0px; /* iOS 둥근모서리 제거 */
+						 
+						  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+						  -moz-appearance: none;
+						  appearance: none;    
+						 
+				}
+
+			/* IE 10, 11의 네이티브 화살표 숨기기 */
+			select::-ms-expand {  display: none;    }
+
+			 
+	/*************    검색버튼 design    ***************/
+
+	
+		.c4inputbox  {   width:36%;    height:100%;     float:left;    }
+			 .inputbox2 {  width:258px;  height:40px;     background-color:#fff;  border:1px solid #ddd;   
+							  float:left;   border-right:none;   font-size:12px;  text-indent:10px;     color:#999;
+							  box-sizing: content-box;				
+			 }
+		
+
+		.submitbtn2 {   width:80px;  height:40px;  background-color:#fff;    border:1px solid #ddd;    
+						    cursor: pointer;	  color:#777;  box-sizing: content-box;
+		
+							background-image:url('../images/search_btn.png');
+							background-repeat:no-repeat;
+							background-position:28px 10px;  
+		}  
+
+
+
+
+/*              반응형               */
+
+
+
+	    /*   PC2        [1600~]        */
+		@media all and (min-width:1600px) {  	}
+		/*   PC1        [1024~1599]  */
+		@media all and (min-width:1024px) and (max-width:1599px) {  	}
+		/*   TABLET2  [768~1023]   */
+		@media all and (min-width:768px) and (max-width:1023px) {  
+			  		
+			
+			/*     main - contant c1    */
+
+	
+				.htitle.h3 {   width:80px;   font-size:15px;   position:absolute;   top: 30px;  left: 0;  
+								    text-indent: 10px;
+				}
+				.contant.c1  .a2.a21  {  border-bottom:1px  solid  #ddd;   }
+				
+				.tunnel2 {   width:75%;   position:absolute;   top:22px;    left:82px;    }
+				.train2 {    width:100%;    }
+				.train2 li {  width:100%;      }
+				.slidingdesc	{       font-size:15px;        }
+				
+				.a2desc {   height:35px;     }
+				.a2desc.btn {   width:35px; height:35px;   }
+				.a2desc.btn.b21    {   top:24px;  right:56px;   }
+				.a2desc.btn.b22    {   top:24px;  right:10px;   }
+				.a2desc.btn img {  width:40px; }
+
+				.a2.a22  .a2desc.btn.b21    {   top:24px;  right:56px;   }
+				.a2.a22  .a2desc.btn.b22    {   top:24px;  right:10px;   }
+
+			
+			/*     main - contant c2    */
+	
+				.a3desc strong  {   padding-top:46px;    }
+
+
+			/*     main - contant c3    */
+				
+
+					/*     이벤트 슬라이딩 배너   */
+
+							.sliding.m  {   width:100%;   height:100%;    }
+							.tunnel.m  {    width:100%;  height:100%;      }
+							.train.m  {   width:300%;  height:100%;        }
+							.train.m > li  {   width:100%;  height:100%;     }
+
+							.train.m .ctrl01  {    background-position:center;    }
+							.train.m .ctrl02  {    background-position:center;    }
+							.train.m .ctrl00  {    background-position:center;    }
+							
+							.prev , .next { width:40px;   height:40px;  position:absolute;   top:45%;  }
+							.prev {    left:20px;    }
+							.next {    right:20px;   }
+							.prev img ,.next  img { width:16px;  height:16px; margin:12px 0 0 12px; }  
+							
+							.controlbtn {  width:96px;  height:28px;    position:absolute;  bottom:14px;  left:41%; 
+											  border-radius:28px;
+							}
+							.controlbtn li {  float:left;   margin:7.5px 5px 0;  }
+							.controlbtn li a:link , .controlbtn li a:visited { display:block;   width:12px;  height:12px;   background-color:#ddd;	
+																			text-decoration:none;    text-indent:-9999px;
+																			border-radius:50%;   position:relative;
+							}		
+							.controlbtn li a:hover .controlbtn li a:focus , .controlbtn li a.active{  color:#333;   background-color:#e56e6e; 
+																		width:40px;  height:12px;  border-radius:8px;
+							} 
+							.stopswitch { width:28px;   height:28px;  position:absolute;  bottom:14px;  left:56%; 
+										  /*	background-color:rgba(0, 0, 0, 0.3);   */
+							}
+							.stopswitch a:link, .stopswitch a:visited {    display:block;  width:100%;  height:100%;    }
+							.stopswitch img { width:16px;   height:16px; margin:6px 0 0 6px;  } 
+
+					/*       W포인트 카드       */
+
+						
+						
+						.inner.a21  .a2desc.p21 img {    width:200px;   height:120px;  position:absolute;  top:50px;  left:23%;  }
+					
+						.inner.a21  .a2desc.p21  span  {     font-size:16px;   position:absolute;  top:62px;      left: 56%;  }
+						.inner.a21  .a2desc.p21  strong  {   font-size:22px;      position:absolute;  top:86px;  left: 56%;     }
+
+
+						.inner.a21  .a2desc.p21 a:link,  .inner.a21  .a2desc.p21 a:visited  {       font-size:15px;    
+											position:absolute;     top: 132px;   left: 56%;
+						}
+
+						.moreimg  {   background-position:48px 8px;  }
+
+
+					/*       요즘결혼 + 고객센터      */
+
+						.a22inner.i21 img  {    width:20%;   padding-top:38px;  }
+
+						.a22inner.i21 span  {    font-size:16px;    }
+						.a22inner.i21 strong , .a22inner.i22 strong  {    font-size:22px;    }  
+
+						.a22inner.i22 img {    width:20%;   padding-top:48px;    }
+	
+
+
+			/*     main - contant c4    */
+
+				
+
+				.c4form  {     height: 97.4%;  	}
+				
+				/*************    select design    ***************/
+				
+					.c4formbox {    height:120px;  right:15px;   /*  width:95%;  position:absolute;   top:16px;  right:25px;  */ }
+					.c4formbox h4 {    width:100%;    height: 46px;    float:none;   	}
+					.c4formbox  span {    color:#999;  padding-left:10px;   }
+
+					.c4selectbox  {    width:26.5%;    height:72px;      } 
+
+				
+
+				 /**********   크로스 브라우징     **********/
+
+				
+						select {   width:100%;  height:100%;   font-size:15px;  	}
+
+						 
+				/*************    검색버튼 design    ***************/
+
+				
+					.c4inputbox  {    width:44%;  height:72px;    }
+						 .inputbox2 {   width:76%;   height:96.8%;    font-size:15px;  	 }
+					
+
+					.submitbtn2 {  width:23%;    height:96.8%;  background-position:50%;   }  
+				
+			
+			
+		}
+
+
+		/*   TABLET1  [481~767]     */
+		@media all and (min-width:481px) and (max-width:767px) {  
+	
+				
+			/*     main - contant c1    */
+				
+				
+				.htitle.h3 {   width:80px;   font-size:18px;   position:absolute;   top: 34px;  left: 0;  
+								    text-indent: 10px;
+				}
+				.contant.c1  .a2.a21  {  border-bottom:1px  solid  #ddd;   }
+				
+				.tunnel2 {   width:50%;   position:absolute;   top:28px;    left:88px;    }
+				.train2 {    width:100%;    }
+				.train2 li {  width:100%;      }
+				.slidingdesc	{       font-size:18px;        }
+		
+				
+				.a2desc {   height:40px;     }
+				.a2desc.btn {   width:40px; height:40px;   }  
+
+				.a2desc.btn.b21    {   top:26px;  right:58px;   }
+				.a2desc.btn.b22    {   top:26px;  right:10px;   }
+				.a2desc.btn img {  width:40px; }
+
+
+				.a2.a22  .a2desc.btn.b21    {   top:26px;  right:58px;   }
+				.a2.a22  .a2desc.btn.b22    {   top:26px;  right:10px;   }
+
+
+				.a2.a22 .htitle.h3 {    width:80px;  margin-left:0px;   }
+
+
+
+			/*     main - contant c2    */
+
+
+
+				.contant.c2  .a3.a31 {   background-image:none;   }
+				.contant.c2  .a3.a32 , .contant.c2  .a3.a33  {   
+							background-image:url('../images/c2_line2.png');
+							background-repeat:no-repeat;
+							background-position:50%  14%; 
+	
+				}
+				.a3desc a:link,  .a3desc a:visited  {  font-size:18px;    }
+				.a3desc strong  {   padding-top:46px;     font-size: 24px;   }
+
+
+			/*     main - contant c3    */
+				
+
+					/*     이벤트 슬라이딩 배너   */
+
+							.sliding.m  {   width:100%;   height:100%;    }
+							.tunnel.m  {    width:100%;  height:100%;      }
+							.train.m  {   width:300%;  height:100%;        }
+							.train.m > li  {   width:100%;  height:100%;     }
+
+							.train.m .ctrl01  {    background-position:center;    }
+							.train.m .ctrl02  {    background-position:center;    }
+							.train.m .ctrl00  {    background-position:center;    }
+							
+							.prev , .next { width:40px;   height:40px;  position:absolute;   top:45%;  }
+							.prev {    left:20px;    }
+							.next {    right:20px;   }
+							.prev img ,.next  img { width:16px;  height:16px; margin:12px 0 0 12px; }  
+							
+							.controlbtn {  width:96px;  height:28px;    position:absolute;  bottom:14px;  left:33%; 
+											  border-radius:28px;
+							}
+							.controlbtn li {  float:left;   margin:7.5px 5px 0;  }
+							.controlbtn li a:link , .controlbtn li a:visited { display:block;   width:12px;  height:12px;   background-color:#ddd;	
+																			text-decoration:none;    text-indent:-9999px;
+																			border-radius:50%;   position:relative;
+							}		
+							.controlbtn li a:hover .controlbtn li a:focus , .controlbtn li a.active{  color:#333;   background-color:#e56e6e; 
+																		width:40px;  height:12px;  border-radius:8px;
+							} 
+							.stopswitch { width:28px;   height:28px;  position:absolute;  bottom:14px;  left:58%; 
+										  /*	background-color:rgba(0, 0, 0, 0.3);   */
+							}
+							.stopswitch img { width:16px;   height:16px; margin:6px 0 0 6px;  } 
+
+					/*       W포인트 카드       */
+						
+						.inner.a21  .a2desc.p21  {   position:relative;   }
+						.inner.a21  .a2desc.p21 img {    width:200px;   height:120px;  position:absolute;  top:50px;  left:9%;    }
+					
+						.inner.a21  .a2desc.p21  span  {     font-size:16px;   position:absolute;  top:62px;  left:60%;    }
+						.inner.a21  .a2desc.p21  strong  {   font-size:22px;      position:absolute;  top:86px; left:60%;     }
+
+
+						.inner.a21  .a2desc.p21 a:link,  .inner.a21  .a2desc.p21 a:visited  {       font-size:15px;    
+											position:absolute;     top: 132px;   left:60%;
+						}
+
+						.moreimg  {   background-position:48px 8px;  }
+
+					/*       요즘결혼 + 고객센터      */
+
+						.a22inner.i21 img  {    width:30%;   padding-top:38px;  }
+
+						.a22inner.i21 span  {    font-size:16px;    }
+						.a22inner.i21 strong , .a22inner.i22 strong  {    font-size:22px;    }  
+
+						.a22inner.i22 img {    width:30%;   padding-top:48px;    }
+	
+
+
+			/*     main - contant c4    */
+
+	
+				.c4form  {    height: 97.4%;    }
+				
+				/*************    select design    ***************/
+
+
+					.c4formbox {     width:100%;    height:auto;    left: 0px;   right:0px;     }
+					.c4formbox h4 {  width:278px;    font-size:22px;   color:#333;    text-indent: 10px;    
+							 line-height:56px;   float:none;   padding-bottom:10px; 
+					}
+					.c4formbox  span {    color:#999;  padding-left:10px;   }
+						
+					.c4selectbox  {  width:100%;    height:80px;    float:none;    padding:0 0 10px;   }   
+						
+
+				
+
+				 /**********   크로스 브라우징     **********/
+
+				
+						select {    width:100%;   height:100%;     font-size:15px;  }
+
+						 
+				/*************    검색버튼 design    ***************/
+
+				
+					.c4inputbox  {   width:100%;  height:80px;       padding-left:0px;    }
+						 .inputbox2 {   width:82%;   height:96.8%;    font-size:15px;   }
+
+					.submitbtn2 {   width:17%;    height:96.8%;  background-position:50%;  }
+
+
+		}
+
+		/*   MOBILE   [400~480]    */
+		@media all and (min-width:400px) and (max-width:480px) {  
+
+					
+			/*     main - contant c1    */
+
+				
+
+				.htitle.h3 {   width:110px;   font-size:20px;   position:absolute;   top: 34px;  left: 0;  
+								    text-indent: 10px;
+				}
+				.contant.c1  .a2.a21  {  border-bottom:1px  solid  #ddd;   }
+				
+				.tunnel2 {   width:94%;   position:absolute;   top:80px;    left:10px;    }
+				.train2 {    width:100%;    }
+				.train2 li {  width:100%;      }
+				.slidingdesc	{       font-size:18px;        }
+		
+				
+				.a2desc {   height:40px;     }
+				.a2desc.btn {   width:40px; height:40px;   }  
+
+				.a2desc.btn.b21    {   top:28px;  right:58px;   }
+				.a2desc.btn.b22    {   top:28px;  right:10px;   }
+
+				.a2.a22  .a2desc.btn.b21    {   top:28px;  right:58px;   }
+				.a2.a22  .a2desc.btn.b22    {   top:28px;  right:10px;   }
+
+
+				.a2.a22 .htitle.h3 {    width:90px;  margin-left:0px;   }
+				
+				.a2desc.btn.b21 img , .a2desc.btn.b22  img ,
+				.a2.a22  .a2desc.btn.b21  img,  .a2.a22  .a2desc.btn.b22  img  {   width:100%;  }
+			
+			/*     main - contant c2    */
+
+
+
+				.contant.c2  .a3.a31 {   background-image:none;   }
+				.contant.c2  .a3.a32 , .contant.c2  .a3.a33  {   
+							background-image:url('../images/c2_line2.png');
+							background-repeat:no-repeat;
+							background-position:50%  14%; 
+	
+				}
+				.a3desc a:link,  .a3desc a:visited  {  font-size:16px;    }
+				.a3desc strong  {   padding-top:46px;     font-size: 22px;   }
+
+
+			/*     main - contant c3    */
+				
+
+					/*     이벤트 슬라이딩 배너   */
+
+							.sliding.m  {   width:100%;   height:100%;    }
+							.tunnel.m  {    width:100%;  height:100%;      }
+							.train.m  {   width:300%;  height:100%;        }
+							.train.m > li  {   width:100%;  height:100%;     }
+
+							.train.m .ctrl01  {    background-position:center;    }
+							.train.m .ctrl02  {    background-position:center;    }
+							.train.m .ctrl00  {    background-position:center;    }
+							
+							.prev , .next { width:40px;   height:40px;  position:absolute;   top:45%;  }
+							.prev {    left:10px;    }
+							.next {    right:10px;   }
+							.prev img ,.next  img { width:16px;  height:16px; margin:12px 0 0 12px; }  
+							
+							.controlbtn {  width:96px;  height:28px;    position:absolute;  bottom:14px;  left:26%; 
+											  border-radius:28px;
+							}
+							.controlbtn li {  float:left;   margin:7.5px 5px 0;  }
+							.controlbtn li a:link , .controlbtn li a:visited { display:block;   width:12px;  height:12px;   background-color:#ddd;	
+																			text-decoration:none;    text-indent:-9999px;
+																			border-radius:50%;   position:relative;
+							}		
+							.controlbtn li a:hover .controlbtn li a:focus , .controlbtn li a.active{  color:#333;   background-color:#e56e6e; 
+																		width:40px;  height:12px;  border-radius:8px;
+							} 
+							.stopswitch { width:28px;   height:28px;  position:absolute;  bottom:14px;  left:60%;  }
+							.stopswitch img { width:16px;   height:16px; margin:6px 0 0 6px;  } 
+
+
+					/*       W포인트 카드       */
+
+
+						.inner.a21  .a2desc.p21  {   position:relative;   }
+							.inner.a21  .a2desc.p21 img {     width:214px;   height:132px;   margin: 0px;  position:absolute;  top:35px;  left:21.7%;    }
+						
+						.inner.a21  .a2desc.p21  span  {   font-size:16px;   position:absolute;  top:196px;  left:26%;   }
+						.inner.a21  .a2desc.p21  strong  {   font-size:22px;   position:absolute;  top:220px;  left:26%;    }
+
+
+						.inner.a21  .a2desc.p21 a:link,  .inner.a21  .a2desc.p21 a:visited  {     font-size:15px; 
+														position:absolute;     top: 275px;   left:26%; 
+						}
+
+						.moreimg  {   background-position:44px  8px; 	 }
+
+					/*       요즘결혼 + 고객센터      */
+
+						.a22inner.i21 img  {    width:26%;   padding-top:35px;  }
+
+						.a22inner.i21 span  {    font-size:16px;    }
+						.a22inner.i21 strong , .a22inner.i22 strong  {    font-size:22px;    }  
+
+						.a22inner.i22 img {    width:26%;   padding-top:44px;    }
+	
+
+
+			/*     main - contant c4    */
+
+
+					.c4form  {    height: 97.4%;    }
+				
+				/*************    select design    ***************/
+
+
+					.c4formbox {     width:100%;    height:auto;    left: 0px;   right:0px;     }
+					.c4formbox h4 {  width:278px;    font-size:20px;   color:#333;    text-indent: 10px;    
+							 line-height:56px;   float:none;   padding-bottom:10px; 
+					}
+					.c4formbox  span {    color:#999;  padding-left:10px;   }
+						
+					.c4selectbox  {  width:100%;    height:70px;    float:none;    padding:0 0 10px;   }  
+	
+
+				 /**********   크로스 브라우징     **********/
+
+				
+						select {    width:100%;   height:100%;    font-size:16px;    text-indent: 14px;   padding-left:0px;   }
+
+						 
+				/*************    검색버튼 design    ***************/
+
+				
+					.c4inputbox  {   width:100%;  height:70px;       padding-left:0px;    }
+						 .inputbox2 {   width:75%;   height:96.8%;    font-size:16px;  text-indent: 14px;   }
+
+					.submitbtn2 {   width:23.5%;     height:96.8%;  background-position:50%;  }
+
+
+
+		}
+
+
+		/*   MOBILE   [399~280]    */
+		@media all and (max-width:399px) {  
+
+					
+			/*     main - contant c1    */
+
+				
+
+				.htitle.h3 {   width:110px;   font-size:20px;   position:absolute;   top: 34px;  left: 0;  
+								    text-indent: 10px;
+				}
+				.contant.c1  .a2.a21  {  border-bottom:1px  solid  #ddd;   }
+				
+				.tunnel2 {   width:94%;   position:absolute;   top:80px;    left:10px;    }
+				.train2 {    width:100%;    }
+				.train2 li {  width:100%;      }
+				.slidingdesc	{       font-size:18px;        }
+		
+				
+				.a2desc {   height:40px;     }
+				.a2desc.btn {   width:40px; height:40px;   }  
+
+				.a2desc.btn.b21    {   top:28px;  right:58px;   }
+				.a2desc.btn.b22    {   top:28px;  right:10px;   }
+
+				.a2.a22  .a2desc.btn.b21    {   top:28px;  right:58px;   }
+				.a2.a22  .a2desc.btn.b22    {   top:28px;  right:10px;   }
+
+
+				.a2.a22 .htitle.h3 {    width:90px;  margin-left:0px;   }
+				
+				.a2desc.btn.b21 img , .a2desc.btn.b22  img ,
+				.a2.a22  .a2desc.btn.b21  img,  .a2.a22  .a2desc.btn.b22  img  {   width:100%;  }
+			
+			/*     main - contant c2    */
+
+
+
+				.contant.c2  .a3.a31 {   background-image:none;   }
+				.contant.c2  .a3.a32 , .contant.c2  .a3.a33  {   
+							background-image:url('../images/c2_line2.png');
+							background-repeat:no-repeat;
+							background-position:50%  14%; 
+	
+				}
+				.a3desc a:link,  .a3desc a:visited  {  font-size:16px;    }
+				.a3desc strong  {   padding-top:46px;     font-size: 22px;   }
+
+
+			/*     main - contant c3    */
+				
+
+					/*     이벤트 슬라이딩 배너   */
+
+							.sliding.m  {   width:100%;   height:100%;    }
+							.tunnel.m  {    width:100%;  height:100%;      }
+							.train.m  {   width:300%;  height:100%;        }
+							.train.m > li  {   width:100%;  height:100%;     }
+
+							.train.m .ctrl01  {    background-position:center;    }
+							.train.m .ctrl02  {    background-position:center;    }
+							.train.m .ctrl00  {    background-position:center;    }
+							
+							.prev , .next { width:40px;   height:40px;  position:absolute;   top:45%;  }
+							.prev {    left:10px;    }
+							.next {    right:10px;   }
+							.prev img ,.next  img { width:16px;  height:16px; margin:12px 0 0 12px; }  
+							
+							.controlbtn {  width:96px;  height:28px;    position:absolute;  bottom:14px;  left:26%; 
+											  border-radius:28px;
+							}
+							.controlbtn li {  float:left;   margin:7.5px 5px 0;  }
+							.controlbtn li a:link , .controlbtn li a:visited { display:block;   width:12px;  height:12px;   background-color:#ddd;	
+																			text-decoration:none;    text-indent:-9999px;
+																			border-radius:50%;   position:relative;
+							}		
+							.controlbtn li a:hover .controlbtn li a:focus , .controlbtn li a.active{  color:#333;   background-color:#e56e6e; 
+																		width:40px;  height:12px;  border-radius:8px;
+							} 
+							.stopswitch { width:28px;   height:28px;  position:absolute;  bottom:14px;  left:60%;  }
+							.stopswitch img { width:16px;   height:16px; margin:6px 0 0 6px;  } 
+
+
+					/*       W포인트 카드       */
+
+
+						.inner.a21  .a2desc.p21  {   position:relative;   }
+							.inner.a21  .a2desc.p21 img {     width:214px;   height:132px;   margin: 0px;  position:absolute;  top:35px;  left:18.7%;    }
+						
+						.inner.a21  .a2desc.p21  span  {   font-size:16px;   position:absolute;  top:196px;  left:26%;   }
+						.inner.a21  .a2desc.p21  strong  {   font-size:22px;   position:absolute;  top:220px;  left:26%;    }
+
+
+						.inner.a21  .a2desc.p21 a:link,  .inner.a21  .a2desc.p21 a:visited  {     font-size:15px; 
+														position:absolute;     top: 275px;   left:26%; 
+						}
+
+						.moreimg  {   background-position:44px  8px; 	 }
+
+					/*       요즘결혼 + 고객센터      */
+
+						.a22inner.i21 img  {    width:26%;   padding-top:35px;  }
+
+						.a22inner.i21 span  {    font-size:16px;    }
+						.a22inner.i21 strong , .a22inner.i22 strong  {    font-size:22px;    }  
+
+						.a22inner.i22 img {    width:26%;   padding-top:44px;    }
+	
+
+
+			/*     main - contant c4    */
+
+
+					.c4form  {    height: 97.4%;    }
+				
+				/*************    select design    ***************/
+
+
+					.c4formbox {     width:100%;    height:auto;    left: 0px;   right:0px;     }
+					.c4formbox h4 {  width:278px;    font-size:20px;   color:#333;    text-indent: 10px;    
+							 line-height:56px;   float:none;   padding-bottom:10px; 
+					}
+					.c4formbox  span {    color:#999;  padding-left:10px;   }
+						
+					.c4selectbox  {  width:100%;    height:70px;    float:none;    padding:0 0 10px;   }  
+	
+
+				 /**********   크로스 브라우징     **********/
+
+				
+						select {    width:100%;   height:100%;    font-size:16px;    text-indent: 14px;   padding-left:0px;   }
+
+						 
+				/*************    검색버튼 design    ***************/
+
+				
+					.c4inputbox  {   width:100%;  height:70px;       padding-left:0px;    }
+						 .inputbox2 {   width:75%;   height:96.8%;    font-size:16px;  text-indent: 14px;   }
+
+					.submitbtn2 {   width:23.5%;     height:96.8%;  background-position:50%;  }
+
+
+
+		}

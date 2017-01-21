@@ -1,0 +1,124 @@
+
+
+
+/*     footer  -  info i1    */
+
+	
+
+	.info.i1   {   width:100%;  height:50px;     border-bottom:1px solid #444;    line-height:50px;  
+					
+	} 
+	.info.i1 .container  {  position:relative;    }
+	.cinfo  {   width:40%;  height:50px;    float:left;   }
+		.cinfoi  {       float:left;   }
+		.cinfoi.i31,  .cinfoi.i32 {   width:80px;  height:50px;    
+						background-image:url('../images/footer_line.png');
+						background-repeat:no-repeat;
+						background-position:64px  22px;  
+		}
+		.cinfoi.i33 {   width:150px;  height:50px;    }
+
+	.cinfoi a:link,  .cinfoi a:visited  {    display:block;   width:100%;   height:100%;   color:#777;   font-size:12px;      } 
+	.cinfoi a:hover,  .cinfoi a:focus  {    color:#999;    } 
+	
+		
+
+
+	.wpcjoin  {   width:165px;  height:36px;     border:1px  solid  #555;  
+					font-size:12px;     position:absolute;  top:6px;   right:174px;  
+					
+	}
+	.familysite   {    width:160px;  height:36px;    border:1px  solid  #555;   
+						font-size:12px;    margin-left:10px;    position:absolute;  top:6px;   right:0px;  
+	}
+	
+
+	.wpcjoin a:link,  .wpcjoin a:visited  {    display:block;   width:100%;   height:100%;   color:#aaa;   font-size:12px;      
+													 line-height:36px;   text-indent:16px;  position:relative;
+	} 
+	.wpcjoin a:hover,  .wpcjoin a:focus {   color:#ddd;   }
+
+	.wpcjoin a:link span ,  .wpcjoin a:visited span  {   display:block;  width:12px;  height:10px;  
+					position:absolute;   top:13px;  right:14px; 
+							
+					background-image:url('../images/footer_arrow03.png');
+					background-repeat:no-repeat;
+					background-position:4px  0px; 
+	}
+	.wpcjoin a:hover span ,  .wpcjoin a:hover span {  
+     			   background-position:-5px  0px; 
+	}
+   
+     /**********/
+
+	.familysite a:link,  .familysite a:visited  {    display:block;   width:100%;   height:100%;   color:#aaa;   font-size:12px;  
+													     text-indent:16px;    line-height:36px;    position:relative;
+	} 
+	.familysite a:hover,  .familysite a:focus {    color:#ddd;  }
+
+	.familysite a:link span ,  .familysite a:visited span  {     display:block;  width:10px;  height:12px;  
+						position:absolute;   top:13px;  right:14px; 
+
+						background-image:url('../images/footer_arrow01.png');
+						background-repeat:no-repeat;
+						background-position:0px  4px;     
+	}
+	.familysite a:hover span {    
+						position:absolute;   top:13px;  right:14px; 
+
+						background-image:url('../images/footer_arrow02.png');
+						background-repeat:no-repeat;
+						background-position:0px  4px;  
+	
+		
+	}
+	.familysite a:focus span {    
+						position:absolute;   top:13px;  right:14px; 
+
+						background-image:url('../images/footer_arrow02.png');
+						background-repeat:no-repeat;
+						background-position:0px  -5px;  	
+	}
+
+
+
+/*     footer  -  info i2    */
+
+	
+	.info.i2  {   width:100%;       }
+		.info.i2 .container {   position:relative;   }  
+	.infoboxi2  {     width:100%;  height:80px;   }
+
+	address {   width:600px;   height:60px;  /* background-color:#222;  */ padding-top:20px;    }
+	.companyinfo {   width:100%;  height:100%;     }
+	.companyinfo  span  {    color:#777;   font-size:12px;  padding-right:15px;    }
+	.span6  {   float:left;   font-style:normal;  line-height:20px; 	}
+	.span6.s61  {    background-image:url('../images/footer_line.png');
+				        background-repeat:no-repeat;
+						background-position:130px  6px;       
+	} 
+	.span6.s62 {  background-image:url('../images/footer_line.png');
+				  background-repeat:no-repeat;
+				  background-position:68px  6px;     
+	}
+	.span6.s63 {       }
+	.span6.s64 {   display:block;  
+					   background-image:url('../images/footer_line.png');
+				      background-repeat:no-repeat;
+					  background-position:204px  6px; 
+    }
+	.span6.s65 {   background-image:url('../images/footer_line.png');
+				      background-repeat:no-repeat;		
+	                  background-position:116px  6px;   
+    }
+	.span6.s66 {     }
+
+
+	.qrcode  {    width:65px;  height:65px;   position:absolute;   top:10px;   right:0px;  
+						background-color:#444;  
+	}
+
+
+	.cotyright  {  width:100%;  height:20px;  /* background-color:#555;  */
+					color:#555;  font-size:12px; 
+	}

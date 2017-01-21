@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head> 
+	<meta charset="utf-8" />
+	<meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=no">
+	<title>W포인트카드</title>
+	<!--
+	<link rel="shortcut icon" href="images/lg_gw.jpg?v=2">
+	<link href="images/lg_gw.jpg?v=2"  rel="apple-touch-icon"  />
+	-->
+	<link rel="stylesheet"  type="text/css"  href="css/reset.css" />
+	<link rel="stylesheet"  type="text/css"  href="css/base.css" />
+	<link rel="stylesheet"  type="text/css"  href="css/layout_main.css" />
+	<link rel="stylesheet"  type="text/css"  href="css/header.css" />
+	<link rel="stylesheet"  type="text/css"  href="css/visual_main.css" />
+	<link rel="stylesheet"  type="text/css"  href="css/main.css" />
+	<link rel="stylesheet"  type="text/css"  href="css/footer.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+
+    <script  type="text/javascript" src="js/mainjs.js" ></script>
+	<script  type="text/javascript" src="js/visualjs.js" ></script>
+	
+
+ </head>
+
+
+ <body>
+ <!--
+	 <ul   class="skipnav">
+		<li><a href="#gnbarea"  title="주메뉴 바로가기 링크" >주메뉴 바로가기</a></li>
+		<li><a href="#main"  title="본문 바로가기 링크" >본문 바로가기</a></li>
+	</ul> 
+-->
+	<div id="wrapper">
+		<header id="header1">	
+			<div class="logoarea">
+				<div class="container">
+					<h1 class="logobox">					
+						<a href="wpay_main.html"  title="w포인트카드 로고"  >
+							<span class="wcolor">W</span>pointcard
+							<!--
+							<img src=""     alt="w포인트카드 로고이미지"   />
+							-->
+						</a>
+					</h1>  <!--  logo  END  -->
+					<div class="optionbox">
+						<h2 class="hidden">옵션영역</h2>
+						<ul class="optu">
+							<li class="optuinner l31">
+								<a href="#"  title="로그인 링크"   >
+									로그인
+								</a>
+							</li> <!--   optuinner l31  END  -->
+
+							<li class="optuinner l32">
+								<a href="#"  title="고객센터 링크"   >
+									W포인트 신청하기
+								</a>
+							</li> <!--   optuinner l32  END  -->
+
+							<li class="optuinner l33">
+								<a href="#"  title="고객센터 링크"   >
+									고객센터
+								</a>
+							</li> <!--   optuinner l33  END  -->
+
+							<li class="optuinner l34">
+								<a href="#"  title="전체보기 링크"   >
+									전체보기
+								</a>
+							</li> <!--   optuinner l34  END  -->
+						</ul> <!--   optu  END  -->
+					</div> <!--   optionbox  END  -->
+				</div> <!--   container   END  -->
+			</div> <!--   logoarea   END  -->
+		
+			<nav class="gnbarea">
+				<div class="container">
+					<h2 class="hidden">GNB</h2>
+					<ul class="gnbu">
+						<li class="gnbl l61">
+							<a href="wpay_sub_m1.html"   title="W포인트카드 바로가기링크"  >W포인트카드</a>
+						</li>  <!--   gnbl l61   END  -->
+						<li class="gnbl l62">
+							<a href="wpay_sub_m2.html"   title="카드이용안내 바로가기링크"  >카드이용안내</a>
+						</li>  <!--   gnbl l62   END  -->
+						<li class="gnbl l63">
+							<a href="wpay_sub_m3.html"   title="포인트적립안내 바로가기링크"  >포인트적립안내</a>
+						</li>  <!--   gnbl l63   END  -->
+						<li class="gnbl l64">
+							<a href="wpay_sub_m4.html"   title="이벤트 바로가기링크"  >이벤트</a>
+						</li>  <!--   gnbl l64   END  -->
+						<li class="gnbl l65">
+							<a href="wpay_sub_m5.html"   title="커뮤니티 바로가기링크"  >커뮤니티</a>
+						</li>  <!--   gnbl l65   END  -->
+						<li class="gnbl l66">
+							<a href="#"   title="포인트몰 바로가기링크"  >W포인트몰</a>
+						</li>  <!--   gnbl l66   END  -->
+					</ul>  <!--   gnbu   END  -->
+					<div class="searchbox">
+						<form action="#"  method="post" class="forminfo">
+							<fieldset>
+							<legend class="hidden">검색</legend>
+								<p class="formp p1">
+									<label for="search" class="hidden">검색</label>
+									<input type="search"  name="search"  id="search" class="inputbox" placeholder="검색어를 입력하세요. "    autocomplete="on"/>
+									<input type="submit" value=" "  id="submit"  class="submitbtn"/>
+								</p>
+							</fieldset>
+						</form> <!--   forminfo   END   -->
+					</div>  <!--   searchbox   END  -->
+				</div> <!--   container   END  -->
+			</nav> <!--   gnbarea END  -->
+		</header> <!--  header1   END  -->
+
+		<header id="header2">	
+			<div class="logoarea2">
+				<div class="container">
+					<h1 class="logobox">					
+						<a href="wpay_main.html"  title="w포인트카드 로고"  >
+							<span class="wcolor">W</span>pointcard
+							<!--
+							<img src=""     alt="w포인트카드 로고이미지"   />
+							-->
+						</a>
+					</h1>  <!--  logo  END  -->
+				</div> <!--   container   END  -->
+			</div> <!--   logoarea   END  -->
+		
+			<nav class="gnbarea2">
+				<div class="container">
+					<h2 class="hidden">GNB</h2>
+					<p class="hbtn">
+						<a href="#"   title="햄버거버튼"  >
+							<img src="images/hbtn_02.png"     alt="메뉴버튼"   >
+						</a>
+					</p> <!--   hbtn  END  -->
+				</div> <!--   container   END  -->
+			</nav> <!--   gnbarea END  -->
+		</header> <!--  header2   END  -->
+
+		<section id="visual">	
+			<div class="wpoint_view">
+				<div class="scene">
+					<img class="coin" src="images/point_coin.png" alt="" >
+					<div class="wp_character">
+					  <div class="people">
+						<img src="images/character_a.png" alt=""/>
+					  </div>
+					  <div class="point_cart">
+						<div class="points">
+						</div>
+						<div class="cart">
+						  <img src="images/cart.png" alt=""/>
+						</div>
+					  </div>
+					</div>
+					<div class="background">
+					  <div class="near n21">
+						<div class="transport">
+						  <img class="" src="" alt=""/>
+						</div>
+						<div class="wmark w1" data-type="pay">
+						  <a href="#">
+							<img class="mk_img" src="images/sign_public_transport.png" alt=""/>
+
+							<span class="mk_arrow">
+							  <img src="images/sign_arrow.png" alt=""/>
+							</span>
+						  </a>
+						  <img class="point_popup" src="images/pay.png" alt="결제 완료"/>
+						</div>
+						<div class="wmark w2" data-type="pay">
+						  <a href="#" data-type="pay">
+							<img class="mk_img" src="images/sign_bank.png" alt=""/>
+							<span class="mk_arrow">
+							  <img src="images/sign_arrow.png" alt=""/>
+							</span>
+						  </a>
+						  <img class="point_popup" src="images/pay.png" alt="결제 완료"/>
+						</div>
+						<div class="wmark w3" data-type="save">
+						  <a href="#">
+							<img class="mk_img" src="images/sign_hanbok.png" alt=""/>
+							<span class="mk_arrow">
+							  <img src="images/sign_arrow.png" alt=""/>
+							</span>
+						  </a>
+						  <img class="point_popup" src="images/point.png" alt="결제 완료"/>
+						</div>
+						<div class="wmark w4" data-type="save">
+						  <a href="#">
+							<img class="mk_img" src="images/sign_dress.png" alt=""/>
+							<span class="mk_arrow">
+							  <img src="images/sign_arrow.png" alt=""/>
+							</span>
+						  </a>
+						  <img class="point_popup" src="images/point.png" alt="결제 완료"/>
+						</div>
+						<div class="wmark w5" data-type="save">
+						  <a href="#">
+							<img class="mk_img" src="images/sign_wedding_presents.png" alt=""/>
+							<span class="mk_arrow">
+							  <img src="images/sign_arrow.png" alt=""/>
+							</span>
+						  </a>
+						  <img class="point_popup" src="images/point.png" alt="결제 완료"/>
+						</div>
+						<div class="wmark w6" data-type="pay">
+						  <a href="#">
+							<img class="mk_img" src="images/sign_convenience_store.png" alt=""/>
+							<span class="mk_arrow">
+							  <img src="images/sign_arrow.png" alt=""/>
+							</span>
+						  </a>
+						  <img class="point_popup" src="images/pay.png" alt="결제 완료"/>
+						</div>
+						<div class="wmark w7" data-type="save">
+						  <a href="#">
+							<img class="mk_img" src="images/sign_wedding_present.png" alt=""/>
+							 <span class="mk_arrow">
+							  <img src="images/sign_arrow.png" alt=""/>
+							 </span>
+						  </a>
+						  <img class="point_popup" src="images/point.png" alt="결제 완료"/>
+						</div>
+						<div class="wmark w8" data-type="pay">
+						  <a href="#">
+							<img class="mk_img" src="images/sign_honeymoon.png" alt=""/>
+							 <span class="mk_arrow">
+							  <img src="images/sign_arrow.png" alt=""/>
+							 </span>
+						  </a>
+						  <img class="point_popup" src="images/pay.png" alt="결제 완료"/>
+						</div>
+						<div class="wmark w9" data-type="save">
+						  <a href="#">
+							<img class="mk_img" src="images/sign_studio.png" alt=""/>
+							 <span class="mk_arrow">
+							  <img src="images/sign_arrow.png" alt=""/>
+							</span>
+						  </a>
+						  <img class="point_popup" src="images/point.png" alt="결제 완료"/>
+						</div>
+						<div class="wmark w10" data-type="pay">
+						  <a href="#">
+							<img class="mk_img" src="images/sign_care_center.png" alt=""/>
+							 <span class="mk_arrow">
+							  <img src="images/sign_arrow.png" alt=""/>
+							</span>
+						  </a>
+						  <img class="point_popup" src="images/pay.png" alt="결제 완료"/>
+						</div>
+						<div class="wmark w11" data-type="pay">
+						  <a href="#">
+							<img class="mk_img" src="images/sign_lotte_mart.png" alt=""/>
+							<span class="mk_arrow">
+							  <img src="images/sign_arrow.png" alt=""/>
+							</span>
+						  </a>
+						  <img class="point_popup" src="images/pay.png" alt="결제 완료"/>
+						</div>
+						<img class="near_bg" src="images/wpc_visual_bg2.png" alt=""/>
+					  </div>
+					  <div class="far f21">
+						<img class="far_bg" src="images/wpc_visual_bg.jpg" alt=""/>
+					  </div>
+					  <div class="far f22">
+						<img class="far_bg" src="images/wpc_visual_bg.jpg" alt=""/>
+					  </div>
+					</div>
+				</div> <!--  scene   END  -->
+				<div class="wp_modal">
+				  <div class="dimm"></div>
+				  <a class="modal_popup" href="#">
+					<img class="modal_popup_close" src="images/close_btn.png"/>
+					<img class="modal_popup_img" src="images/popup_desc.png" alt="">
+				  </a>
+				</div> <!--  wp_modal   END  -->
+			</div> <!--  wpoint_view   END  -->
+		</section>  <!--  visual   END  -->
+
+		<div id="main">
+			<div class="contant c1">
+				<div class="container">
+					<div class="a2 a21">
+						<h3 class="htitle h3">공지사항</h3>
+						<div class="tunnel2">
+							<ul class="train2">
+								<li class="ctrl01">
+									<span class="slidingdesc">
+										안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세...
+									</span> <!--   slidingdesc  END   -->
+								</li>  <!--   ctrl01  END   -->
+								<li class="ctrl02">
+									<span class="slidingdesc">
+										반갑습니다! 반갑습니다! 반갑습니다! 반갑습니다! 반갑습니...
+									</span>	 <!--   slidingdesc  END   -->
+								</li>  <!--   ctrl02  END   -->
+								<li class="ctrl00">
+									<span class="slidingdesc">
+										환영합니다! 환영합니다! 환영합니다! 환영합니다! 환영합니...
+									</span> <!--   slidingdesc  END   -->
+								</li>  <!--   ctrl00  END   -->
+							</ul> <!--   train2  END   -->
+						</div> <!--  tunnel2  END  -->
+						<p class="a2desc btn b21">
+							<a href="#"  title="일시정지" >
+								<img src="images/stop_btn2.png"   alt="일시정지"   />
+							</a>
+						</p>  <!--  a2desc btn b21  END  -->
+
+						<p class="a2desc btn b22">
+							<a href="#"  title="더보기"  >
+								<img src="images/more_btn2.png"   alt="더보기"   />
+							</a>
+						</p>  <!--  a2desc btn b22  END  -->
+					</div> <!--  a2 a21  END  -->
+
+					<div class="a2 a22">
+						<h3 class="htitle h3">새 소식</h3>
+						<div class="tunnel2">
+							<ul class="train2">
+								<li class="ctrl01">
+									<span class="slidingdesc">
+										여기는 새소식이 들어오는 영역입니다. 1
+									</span> <!--   slidingdesc  END   -->
+								</li>  <!--   ctrl01  END   -->
+								<li class="ctrl02">
+									<span class="slidingdesc">
+										여기는 새소식이 들어오는 영역입니다. 2
+									</span>	 <!--   slidingdesc  END   -->
+								</li>  <!--   ctrl02  END   -->
+								<li class="ctrl00">
+									<span class="slidingdesc">
+										여기는 새소식이 들어오는 영역입니다. 3
+									</span> <!--   slidingdesc  END   -->
+								</li>  <!--   ctrl00  END   -->
+							</ul> <!--   train2  END   -->
+						</div> <!--  tunnel2  END  -->
+						<p class="a2desc btn b21">
+							<a href="#"  title="일시정지" >
+								<img src="images/stop_btn2.png"   alt="일시정지"   />
+							</a>
+						</p>  <!--  a2desc btn b21  END  -->
+
+						<p class="a2desc btn b22">
+							<a href="#"  title="더보기"  >
+								<img src="images/more_btn2.png"   alt="더보기"   />
+							</a>
+						</p>  <!--  a2desc btn b22  END  -->
+					</div> <!--  a2 a22  END  -->
+				</div> <!--  container  END  -->
+			</div> <!--  contant c1  END  -->
+
+			<div class="container">
+				<div class="contant c2">
+					<div class="a3 a31">
+						<h3 class="hidden">내 카드 관리하기</h3>
+						<p class="a3desc p1">
+							<a href="#"   title="내 카드 관리하기 링크"  >
+								<strong>내 카드 관리하기</strong>
+								<span>사용 내역 조회 / 내 정보 수정</span>
+							</a>
+						</p>
+					</div> <!--  a3 a31  END  -->
+
+					<div class="a3 a32">
+						<h3 class="hidden">카드이용 안내</h3>
+						<p class="a3desc p2">
+							<a href="wpay_sub_m2.html"   title="카드 이용안내 링크"  >
+								<strong>카드이용 안내</strong>
+								<span>교통 / 편의시설 / 포인트몰</span>
+							</a>
+						</p>
+					</div> <!--  a3 a32  END  -->
+
+					<div class="a3 a33">
+						<h3 class="hidden">포인트적립 안내</h3>
+						<p class="a3desc p3">
+							<a href="wpay_sub_m3.html"   title="포인트적립 안내"  >
+								<strong>포인트적립 안내</strong>
+								<span>웨딩 / 베이비</span>
+							</a>
+						</p>
+					</div> <!--  a3 a33  END  -->
+				</div> <!--  contant c2  END  -->
+
+				<div class="contant c3">
+					<div class="a2 a21">
+						<div class="sliding m">
+							<h4 class="hidden">event sliding banner</h4>
+							<div class="tunnel m">
+								<ul class="train m">
+									<li class="ctrl01">
+										<!--
+										<span class="slidingdesc">
+										</span>	--> <!--   slidingdesc  END   -->
+									</li>  <!--   ctrl01  END   -->
+									<li class="ctrl02">
+										<!--
+										<span class="slidingdesc">
+										</span>	--> <!--   slidingdesc  END   -->
+									</li>  <!--   ctrl02  END   -->
+									<li class="ctrl00">
+										<!--
+										<span class="slidingdesc">
+										</span>	--> <!--   slidingdesc  END   -->
+									</li>  <!--   ctrl00  END   -->
+								</ul> <!--   train  END   -->
+
+								<p class="prev">
+									<a href="#">
+										<img src="images/prev.png"  alt="이전으로가기 링크"  />   
+									</a>
+								</p> <!--   prev  END   -->
+
+								<p class="next">
+									<a href="#">
+										<img src="images/next.png"  alt="다음으로가기 링크"  />   
+									</a>
+								</p> <!--   next  END   -->
+
+								<p class="stopswitch">
+									<a href="#">
+										<img src="images/pauseoff.png"  alt="일시정지버튼"  />    
+									</a>
+								</p> <!--   stopswitch  END   -->
+							</div> <!--  tunnel  END  -->
+						</div> <!--  sliding  END  -->
+					</div> <!--  a2 a21  END -->
+
+					<div class="a2 a22">
+						<div class="inner a21">
+							<h3 class="hidden">실속있는 W포인트카드</h3>
+							<p class="a2desc p21">
+								<img src="images/c3_card.png"   alt="W포인트카드"  />
+								<span>실속있는</span>
+								<strong>W포인트 카드!</strong>
+								<a href="#"   title="W포인트 카드 안내링크"  class="moreimg" >
+									more
+								</a>
+							</p> <!--   a2desc p21   END -->
+						</div> <!--  inner a21  END  -->
+
+						<div class="inner a22">
+							<div class="a22 inner1">
+								<h3 class="hidden">실시간 웨딩홀 예약 요즘결혼 APP</h3>
+								<p class="a22inner i21">
+									<a href="#"   title="포인트적립 안내"  >
+										<img src="images/thesedays_logo.png"   alt="요즘결혼 로고"  />
+										<span>실시간 웨딩홀 예약</span>
+										<strong>요즘결혼 APP</strong>
+									</a>
+								</p>
+							</div> <!--  a22inner1  END  -->
+
+							<div class="a22 inner2">
+								<h3 class="hidden">고객센터</h3>
+								<p class="a22inner i22">
+									<a href="#"   title="고객센터 바로가기 링크"  >
+										<img src="images/contact_icon.png"   alt="고객센터"  />
+										<strong>고객센터</strong>
+									</a>
+								</p>
+							</div> <!-- a22inner2  END  -->
+						</div> <!--  inner a22  END  -->
+					</div> <!--  a2 a22  END -->
+				</div> <!--  contant c3  END  -->
+
+				<div class="contant c4">
+					<h3 class="hidden">전국 가맹점 안내</h3>
+					<form action="#"  method="post" class="c4form">
+						<fieldset>
+						<legend class="hidden">전국 가맹점 안내</legend>	
+							<div class="c4formbox">
+								<h4 class="htitle h4">전국 가맹점 안내 <span>SEARCH</span></h4>	
+								
+								<p class="c4selectbox">
+									<label for="userselect2"  class="hidden" >업종 선택</label>	
+									<select   id="userselect2"    name="userselect2"   class="selectbox2">
+										<option value="">업종를 선택하세요.</option>
+										<option value="a">한복</option>
+										<option value="b">예복</option>
+										<option value="c">예단</option>
+										<option value="d">예물</option>
+										<option value="e">허니문</option>
+										<option value="f">스튜디오</option>
+										<option value="g">산후조리원</option>
+									</select> <!--  select  END  -->
+								</p> <!--  c4selectbox  END  -->
+
+								<p class="c4selectbox">
+									<label for="userselect1"  class="hidden" >지역 선택</label>	
+									<select   id="userselect1"    name="userselect1"   class="selectbox1">
+										<option value="">지역을 선택하세요.</option>
+										<option value="1">서울</option>
+										<option value="2">인천</option>
+										<option value="3">수원</option>
+										<option value="4">대구</option>
+										<option value="5">대전</option>
+										<option value="6">광주</option>
+										<option value="7">전주</option>
+										<option value="8">부산</option>
+									</select> <!--  select  END  -->
+								</p> <!--  c4selectbox  END  -->
+
+								<p class="c4inputbox">
+									<label for="search2" class="hidden">검색</label>
+									<input type="search"  name="search2"  id="search2" class="inputbox2" placeholder="검색어를 입력하세요. "    autocomplete="on"/>
+									<input type="submit" value=" "  id="submit2"   class="submitbtn2" />
+								</p> <!--  c4formbox  END  -->
+							</div> <!--  c4selectbox  END  -->
+						</fieldset>  <!--  fieldset  END  -->
+					</form> <!--  form END  -->
+				</div> <!--  contant c4  END  -->
+			</div> <!--  container  END  -->
+		</div>  <!--  main   END  -->
+
+		<footer id="footer">
+			<h3 class="hidden">footer</h3>
+			<div class="info i1">
+				<div class="container">
+					<h3 class="hidden"></h3>
+					<ul class="cinfo">
+						<li  class="cinfoi i31"><a href="#"   title="회사소개 바로가기링크"  >회사소개</a></li>
+						<li  class="cinfoi i32"><a href="#"   title="이용약관 바로가기링크"  >이용약관</a></li>
+						<li  class="cinfoi i33"><a href="#"   title="개인정보 취급 처리방침 바로가기링크"  >개인정보 취급 &#8226; 처리방침</a></li>
+					</ul>  <!--   cinfo   END  -->
+					<div class="wpcjoin">
+						<a href="#"   title="W포인트카드 신청하기 링크"    >W포인트카드 신청하기<span></span></a>
+					</div>   <!--   wpcjoin   END  -->
+					<div class="familysite">
+						<a href="#"   title="Family Site"    >Family Site<span></span></a>
+					</div>  <!--   familysite  END  -->
+				</div> <!--  container   END  -->		
+			</div> <!--  info i1 END  -->
+			<div class="info i2">
+				<div class="container">
+					<div class="infoboxi2">
+						<address>
+							<p class="companyinfo">
+								<span class="span6 s61"> 사업자: (주)오쁘띠모바일 </span>
+								<span class="span6 s62"> 대표: 최연도 &#8226; 김정욱 </span>
+								<span class="span6 s63"> 사업자등록번호: 278-81-010413 </span>
+								<span class="span6 s64"> 주소: 서울시 강남구 논현동 268-21, 2층</span>
+								<span class="span6 s65"> 고객센터: 1688-7629</span>
+								<span class="span6 s66"> 이메일: more0079@gmail.com</span>
+							</p> <!-- companyinfo  END  -->   
+						</address><!-- address  END  -->	
+						<div class="qrcode">
+							<!--
+							<img src=""   alt=""  />
+							-->
+						</div>  <!--  qrcode  END  -->	
+					</div> <!--   infoboxi2  END  -->
+					<p class="cotyright">
+						COPYRIGHT&copy;(주)오쁘띠모바일 CO., LTD ALL RIGHTS RESERVED.
+					</p> <!-- cotyright  END  -->
+				</div> <!--   container  END  -->
+			</div> <!--   info i2  END  -->
+		</footer>  <!--  footer   END  -->
+	</div> <!--  wrapper   END   -->
+ </body> <!--  body   END   -->
+</html> <!--  html   END   -->
+<!--
+  
+-->
