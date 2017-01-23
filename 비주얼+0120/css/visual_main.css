@@ -34,6 +34,7 @@
     .wpoint { position: absolute; }
     .far { }
     .near { z-index: 1; left: -0;}
+    .near.n20, .far.f20 { left: -100%; }
     .near.n22, .far.f22 { left: 100%; }
     .near_bg, .far_bg { width: 100.1%; }
 

@@ -68,8 +68,8 @@
         }, 1500);
         // 애니메이트 실행 + 트윈매니저에 등록
         window.setTimeout(function () {
-            tweenMng.add("near", ani.setNear(ns.$near, ns), ns.$near);
-            tweenMng.add("far", ani.setFar(ns.$far), ns.$far);
+            tweenMng.add("near", ani.setNear(ns.$near));
+            tweenMng.add("far", ani.setFar(ns.$far));
             tweenMng.getTween("walk").play();
 
 //          window.setInterval(function () {
@@ -84,6 +84,7 @@
         ns.$scene = $(".scene");
         ns.$bg = $(".background");
         ns.$near = $(".near");
+        ns.$near21 = $(".near.n21");
         ns.$far = $(".far");
         ns.$points = $(".point_cart .points");
         ns.$char = $(".people");
@@ -109,6 +110,7 @@
     // .near 백그라운드 사본 생성
     function bgAppend() {
         $(".near.n21")
+            .before($(".near.n21").clone().removeClass("n21").addClass("n20"))
             .after($(".near.n21").clone())
             .next(".near.n21").removeClass("n21").addClass("n22");
         ns.$far = $(".far");
@@ -130,17 +132,17 @@
                     // height 조정 : 4560 / 13 '==. 350
                     $wpoint_view.add($visual).height(Math.floor(currWidth / 13));
                     bfWidth = currWidth;
-
                 }
-                // if(winWidth > 1000){
-                //     var v = (winWidth - 1000) / 182;
-                //     // ns.$wpChar.css("left", v + 0.9 + "%");
-                //     ns.$scene.css("left", v*5 + "%");
-                //     //ns.$
-                //     console.log(v);
-                // } else {
-                //     ns.$scene.css("left", "");
-                // }
+                if(winWidth > 1000){
+                    var v = (winWidth - 1000) / 182;
+                    // ns.$wpChar.css("left", v + 0.9 + "%");
+                    console.log(v);
+                    ns.$scene.css("left", v*5 + "%");
+                    ns.eventPos = ns.calcEventPos(6 + v*3);
+                } else {
+                    ns.$scene.css("left", "");
+                    ns.eventPos = ns.calcEventPos(6);
+                }
             }
         })());
     }
@@ -272,18 +274,19 @@
     // 애니메이션 집합
     ani = {
         // 가까이 있는 배경
-        setNear: function ($near, ns) {
+        setNear: function ($near) {
             var index = 0;
             var time  = 60;
             var type;
             var timeSub = 0;
+            var $currNear = ns.$near21;
             // 진행도에 따라 실행되어지는 이벤트들 !
             var tline = new TimelineMax({
 
                 onUpdate:function () {
                     var timeEvt;
 
-                    if(ns.eventPos[index] < -($near.offset().left / $near.width())*100) {
+                    if(ns.eventPos[index] < -($currNear.offset().left / $near.width())*100) {
                         timeEvt = new TimelineMax();
                         type = ns.$wmark.eq(index).attr("data-type");
                         timeSub = type === "pay" ? 1.5 : 0;
