@@ -91,7 +91,7 @@
 					var index = $(".train li").attr("class").substring(5,6);  
 					$(".controlbtn > li			>      a").removeClass("active");
 					$(".controlbtn > li:eq("+ index +") > a").addClass("active");
-					console.log(   index   ); 
+					// console.log(   index   );
 				});
 				return false;
 			}); //// .next END

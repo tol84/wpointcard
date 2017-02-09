@@ -95,16 +95,15 @@
         ns.$pointCart = $(".point_cart");
         ns.$coin = $(".coin");
 
-        ns.calcEventPos = function (n) {
+        ns.calcEventPos = function () {
             var nearWidth = ns.$near.width();
             return $.map(new Array(ns.$wmark.length), function (v, i) {
-                return (ns.$wmark.eq(i).offset().left / nearWidth) * 100 - n;
+                return (ns.$wmark.eq(i).offset().left / nearWidth);
             });
         };
 
         // 이벤트가 발생할 포지션들을 기억
-        ns.eventPos = ns.calcEventPos(6);
-
+        ns.eventPos = ns.calcEventPos();
     }
 
     // .near 백그라운드 사본 생성
@@ -124,7 +123,8 @@
             var $visual = $("#visual");
             var $near = ns.$near;
             var bfWidth = 0;
-            var beforePer = 0;
+            var timeout;
+            var playTweens = [];
             return function () {
                 var currWidth = $near.width();
                 var winWidth = $(window).width();
@@ -133,16 +133,24 @@
                     $wpoint_view.add($visual).height(Math.floor(currWidth / 13));
                     bfWidth = currWidth;
                 }
-                if(winWidth > 1000){
-                    var v = (winWidth - 1000) / 182;
-                    // ns.$wpChar.css("left", v + 0.9 + "%");
-                    console.log(v);
-                    ns.$scene.css("left", v*5 + "%");
-                    ns.eventPos = ns.calcEventPos(6 + v*3);
-                } else {
-                    ns.$scene.css("left", "");
-                    ns.eventPos = ns.calcEventPos(6);
+                if(tweenMng.getPlayingTweens().length > 0){
+                    playTweens = tweenMng.getPlayingTweens();
                 }
+                tweenMng.tweensAction(playTweens, "pause");
+
+                window.clearTimeout(timeout);
+                timeout = window.setTimeout(function () {
+                    if(winWidth > 1000){
+                        var resizeValue = (winWidth - 1000) / 182;
+                        // ns.$wpChar.css("left", v + 0.9 + "%");
+                        ns.$scene.css("left", resizeValue * 5 + "%");
+                    } else {
+                        ns.$scene.css("left", "");
+                    }
+                    tweenMng.tweensAction(playTweens, "play");
+                }, 100);
+
+
             }
         })());
     }
@@ -158,10 +166,15 @@
         var folderName = "images/";
         var fileName = ["taxi", "subway", "bus"];
         var extension = ".png";
-        var randIndex = Math.floor(Math.random()*100) % fileName.length;
+        var randIndex = Math.floor(Math.random() * 100) % fileName.length;
         $imgs.each(function () {
             $(this).attr("src", folderName + fileName[randIndex] + extension).attr("class", fileName[randIndex]);
         });
+    }
+    function middleOffset($element1, $element2) {
+        var position1 = $element1.offset();
+        var position2 = $element2.offset();
+        return {left:position1.left, top:absolutePosition.top - position.top};
     }
 
     // 트윈 객체 관리
@@ -285,8 +298,8 @@
 
                 onUpdate:function () {
                     var timeEvt;
-
-                    if(ns.eventPos[index] < -($currNear.offset().left / $near.width())*100) {
+                    var nearWidth = $near.width();
+                    if(ns.eventPos[index] - ((ns.$char.offset().left + ns.$char.width()*2) / nearWidth) < -($currNear.offset().left / nearWidth)) {
                         timeEvt = new TimelineMax();
                         type = ns.$wmark.eq(index).attr("data-type");
                         timeSub = type === "pay" ? 1.5 : 0;
@@ -328,7 +341,9 @@
                                 if(!$point) { return }
                                 var pointWidth = $point.width();
                                 var markOffset = ns.$wmark.eq(index-1).offset();
-                                var pointOffset = $point.offset();
+                                var pointOff = $point.offset();
+
+                                TweenLite.set($point, {x:0, y:0});
 
                                 tweenMng.setTween("pointSub", TweenMax.to(
                                     $point,
@@ -337,12 +352,13 @@
                                         bezier: {
                                             curviness: 0.4, autoRotate: true, values: [
                                                 {
-                                                    left: markOffset.left / 2.1,
+                                                    x: (markOffset.left - pointOff.left) / 2,
                                                     top: (markOffset.top - ns.$scene.offset().top) * 0.55
                                                     , opacity:0.7
                                                 },
                                                 {
-                                                    left: markOffset.left / 1.6,
+                                                    left:0,
+                                                    x: markOffset.left - pointOff.left,
                                                     top: (markOffset.top - ns.$scene.offset().top) * 0.9,
                                                     opacity:0
                                                 }
@@ -368,7 +384,10 @@
                             if(type === "save") {
                                 var $point = pointMng.push().css("visibility", "hidden");
                                 var pointWidth = $point.width();
+                                var pointOff = $point.offset();
+                                var coinOff = ns.$coin.offset();
                                 ns.$coin.css("zIndex", 1);
+                                TweenLite.set(ns.$coin, {x:0, y:0});
                                 tweenMng.setTween("pointAdd", TweenMax.to(
                                     ns.$coin,
                                     1,
@@ -376,14 +395,14 @@
                                         bezier: {
                                             curviness: 0.5, autoRotate: true, values: [
                                                 {
-                                                    left: ($point.offset().left + ns.$coin.offset().left) / 2,
-                                                    top: ($point.offset().top - ns.$scene.offset().top) / 3,
+                                                    x: (pointOff.left - coinOff.left) / 1.5,
+                                                    y: (pointOff.top - coinOff.top) / 3,
                                                     width: pointWidth / 1.25,
                                                     minWidth: pointWidth / 1.25
                                                 },
                                                 {
-                                                    left: $point.offset().left,
-                                                    top: $point.offset().top - ns.$scene.offset().top,
+                                                    x: pointOff.left - coinOff.left,
+                                                    y: pointOff.top - coinOff.top,
                                                     width: pointWidth,
                                                     minWidth: pointWidth
                                                 }
